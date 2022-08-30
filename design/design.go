@@ -11,17 +11,17 @@ var _ = API("users", func() {
 	Version("0.0.1")
 	Server("http", func() {
 		Host("development", func() {
-			URI("http://localhost:8080")
+			URI("http://localhost:8085")
 		})
 	})
 })
 
 var User = Type("User", func() {
-	Attribute("name", func() {
+	Attribute("name", String, func() {
 		MinLength(5)
 	})
 
-	Attribute("birth_year", func() {
+	Attribute("birth_year", Int32, func() {
 		Minimum("1900")
 		Maximum("2022")
 	})

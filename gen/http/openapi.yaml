@@ -70,8 +70,8 @@ definitions:
         type: object
         properties:
             birth_year:
-                type: string
-                example: 1940.127212715791
+                type: integer
+                example: 1962
                 minimum: 1900
                 maximum: 2022
             name:
@@ -79,7 +79,7 @@ definitions:
                 example: skl
                 minLength: 5
         example:
-            birth_year: 1987.8755296359484
+            birth_year: 1930
             name: or2
         required:
             - name
@@ -89,8 +89,8 @@ definitions:
         type: object
         properties:
             birth_year:
-                type: string
-                example: 1989.2273142368892
+                type: integer
+                example: 1968
                 minimum: 1900
                 maximum: 2022
             name:
@@ -98,7 +98,7 @@ definitions:
                 example: vc0
                 minLength: 5
         example:
-            birth_year: 1982.850803972354
+            birth_year: 1904
             name: 3su
         required:
             - name
@@ -108,8 +108,8 @@ definitions:
         type: object
         properties:
             birth_year:
-                type: string
-                example: 1982.3865922016562
+                type: integer
+                example: 2014
                 minimum: 1900
                 maximum: 2022
             name:
@@ -117,7 +117,7 @@ definitions:
                 example: 8za
                 minLength: 5
         example:
-            birth_year: 1949.6545370659376
+            birth_year: 1992
             name: nwj
         required:
             - name

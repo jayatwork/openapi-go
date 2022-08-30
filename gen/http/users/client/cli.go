@@ -24,7 +24,7 @@ func BuildCreatePayload(usersCreateBody string) (*users.User, error) {
 	{
 		err = json.Unmarshal([]byte(usersCreateBody), &body)
 		if err != nil {
-			return nil, fmt.Errorf("invalid JSON for body, \nerror: %s, \nexample of valid JSON:\n%s", err, "'{\n      \"birth_year\": 1961.4060702583001,\n      \"name\": \"nne\"\n   }'")
+			return nil, fmt.Errorf("invalid JSON for body, \nerror: %s, \nexample of valid JSON:\n%s", err, "'{\n      \"birth_year\": 2004,\n      \"name\": \"nne\"\n   }'")
 		}
 		if utf8.RuneCountInString(body.Name) < 5 {
 			err = goa.MergeErrors(err, goa.InvalidLengthError("body.name", body.Name, utf8.RuneCountInString(body.Name), 5, true))

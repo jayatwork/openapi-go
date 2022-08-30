@@ -30,18 +30,18 @@ paths:
                                 items:
                                     $ref: '#/components/schemas/CreateRequestBody'
                                 example:
-                                    - birth_year: 1993.5607251869492
+                                    - birth_year: 2016
                                       name: ci5
-                                    - birth_year: 1993.5607251869492
+                                    - birth_year: 2016
                                       name: ci5
                             example:
-                                - birth_year: 1993.5607251869492
+                                - birth_year: 2016
                                   name: ci5
-                                - birth_year: 1993.5607251869492
+                                - birth_year: 2016
                                   name: ci5
-                                - birth_year: 1993.5607251869492
+                                - birth_year: 2016
                                   name: ci5
-                                - birth_year: 1993.5607251869492
+                                - birth_year: 2016
                                   name: ci5
         post:
             tags:
@@ -55,7 +55,7 @@ paths:
                         schema:
                             $ref: '#/components/schemas/CreateRequestBody'
                         example:
-                            birth_year: 1961.4060702583001
+                            birth_year: 2004
                             name: nne
             responses:
                 "200":
@@ -65,7 +65,7 @@ paths:
                             schema:
                                 $ref: '#/components/schemas/CreateRequestBody'
                             example:
-                                birth_year: 1923.9657569924534
+                                birth_year: 2001
                                 name: t0q
 components:
     schemas:
@@ -73,8 +73,8 @@ components:
             type: object
             properties:
                 birth_year:
-                    type: string
-                    example: 1998.6715134042893
+                    type: integer
+                    example: 1947
                     minimum: 1900
                     maximum: 2022
                 name:
@@ -82,7 +82,7 @@ components:
                     example: 7pd
                     minLength: 5
             example:
-                birth_year: 2008.7441726687148
+                birth_year: 1935
                 name: ll4
             required:
                 - name

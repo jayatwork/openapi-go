@@ -30,7 +30,7 @@ func UsageCommands() string {
 // UsageExamples produces an example of a valid invocation of the CLI tool.
 func UsageExamples() string {
 	return os.Args[0] + ` users create --body '{
-      "birth_year": 1961.4060702583001,
+      "birth_year": 2004,
       "name": "nne"
    }'` + "\n" +
 		""
@@ -160,7 +160,7 @@ Create implements create.
 
 Example:
     %[1]s users create --body '{
-      "birth_year": 1961.4060702583001,
+      "birth_year": 2004,
       "name": "nne"
    }'
 `, os.Args[0])

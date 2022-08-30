@@ -32,5 +32,5 @@ var MethodNames = [2]string{"create", "all"}
 // User is the payload type of the users service create method.
 type User struct {
 	Name      string
-	BirthYear string
+	BirthYear int32
 }

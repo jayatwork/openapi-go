@@ -26,6 +26,14 @@ func (s *userssrvc) Create(ctx context.Context, p *users.User) (res *users.User,
 
 // All implements all.
 func (s *userssrvc) All(ctx context.Context) (res []*users.User, err error) {
+	res = []*users.User{
+		{
+			Name: "Jason", BirthYear: 1979,
+		},
+		{
+			Name: "Khavi", BirthYear: 2006,
+		},
+	}
 	s.logger.Print("users.all")
 	return
 }

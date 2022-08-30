@@ -71,7 +71,7 @@ func main() {
 	switch *hostF {
 	case "development":
 		{
-			addr := "http://localhost:8080"
+			addr := "http://localhost:8085"
 			u, err := url.Parse(addr)
 			if err != nil {
 				logger.Fatalf("invalid URL %#v: %s\n", addr, err)

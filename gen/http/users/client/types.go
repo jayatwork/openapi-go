@@ -18,14 +18,14 @@ import (
 // request body.
 type CreateRequestBody struct {
 	Name      string `form:"name" json:"name" xml:"name"`
-	BirthYear string `form:"birth_year" json:"birth_year" xml:"birth_year"`
+	BirthYear int32  `form:"birth_year" json:"birth_year" xml:"birth_year"`
 }
 
 // CreateResponseBody is the type of the "users" service "create" endpoint HTTP
 // response body.
 type CreateResponseBody struct {
 	Name      *string `form:"name,omitempty" json:"name,omitempty" xml:"name,omitempty"`
-	BirthYear *string `form:"birth_year,omitempty" json:"birth_year,omitempty" xml:"birth_year,omitempty"`
+	BirthYear *int32  `form:"birth_year,omitempty" json:"birth_year,omitempty" xml:"birth_year,omitempty"`
 }
 
 // AllResponseBody is the type of the "users" service "all" endpoint HTTP
@@ -35,7 +35,7 @@ type AllResponseBody []*UserResponse
 // UserResponse is used to define fields on response body types.
 type UserResponse struct {
 	Name      *string `form:"name,omitempty" json:"name,omitempty" xml:"name,omitempty"`
-	BirthYear *string `form:"birth_year,omitempty" json:"birth_year,omitempty" xml:"birth_year,omitempty"`
+	BirthYear *int32  `form:"birth_year,omitempty" json:"birth_year,omitempty" xml:"birth_year,omitempty"`
 }
 
 // NewCreateRequestBody builds the HTTP request body from the payload of the
